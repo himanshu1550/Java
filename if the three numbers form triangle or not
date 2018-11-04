@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+	    System.out.println("If It's a triangle or not");
+		System.out.println("Enter any three values");
+		Scanner sc= new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int z=sc.nextInt();
+	    if(x<y && x<z)
+	    {
+	        if(x<y+z){
+	        System.out.println("yes");
+	        }
+	    }
+		else if(y<x && y<z)
+		{
+		    if(y<x+z)
+		    {
+		        System.out.println("yes");
+		    }
+		}
+		    else if(z<y && z<x)
+		{
+		    if(z<x+y)
+		    {
+		        System.out.println("Yes");
+		    }
+		}
+		else
+		{
+		    System.out.println("no");
+		}
+	}
+}
